@@ -1,0 +1,880 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+body{
+
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    background-color: #FFFDF7;
+    
+
+}
+
+.logo{
+
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    left: 40%;
+  
+}
+
+header{
+
+    background-color: #8ACBC1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px #C4E5E0;
+    width: 100%;
+
+}
+
+
+header nav{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+
+    
+}
+
+header li{
+
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+   
+    
+}
+
+.header__a{
+    color: #FFFDF7;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 30px;
+}
+
+.main__index{
+
+    display: grid;
+    grid-template-areas: 
+    'slider'
+    'instagram'
+    'publicity'
+    ;
+    grid-template-columns: 1 1fr;
+    row-gap: 10px;
+
+
+}
+
+
+.slider{
+    grid-area: slider;
+
+}
+
+
+.slider__img{
+    
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 90px;
+    left: 190px;
+
+}
+
+
+
+.instagram{
+    background-color: #C895C3;
+    margin: 0 0 40px 0;
+    margin-top: 250px;
+    margin-bottom: 0px;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    grid-area: instagram;
+
+}
+
+
+
+.instagram__h2{
+    
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: #8ACBC1;
+    
+    
+}
+
+.instagram__h3{
+    
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: #8ACBC1;
+    
+    margin-bottom: 25px;
+    
+    
+}
+
+.instagram__logo{
+    color: #8ACBC1;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    left: 48%;
+
+    width: 50px;
+    height: 50px;
+}
+
+.publicity{
+    background-color: #ffffff;
+    margin: 0 0 40px 0;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    border: 5px solid #e9e8e8;
+    border-radius: 10px;
+    grid-area: publicity;
+    
+
+}
+.publicity__img{
+    width: 30px;
+    height: 30px;
+     
+}
+
+.publicity__position{
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-around;
+    margin:  15px;
+    padding: 20px;
+}
+.publicity__position--whatsapp{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.publicity__position--whatsapp img{
+    margin-right: 20px;
+}
+
+.publicity__position p{
+    margin-left: 50px;
+}
+
+.publicity__position--creditCard{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.publicity__position--creditCard img{
+    margin-right: 20px;
+}
+
+
+.catalogue{
+    
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    border: 5px solid #8ACBC1;
+  
+}
+
+.catalogue__position{
+
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 90px;
+    margin: 0 auto;
+    
+    
+ 
+}
+
+
+
+
+.catalogue__position__product{
+
+    flex-direction: row;
+
+}
+
+
+
+.catalogue__title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+
+}
+
+
+.catalogue__description{
+
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    width: 350px;
+    height: 350px;
+    justify-items: center;
+    
+
+}
+
+.form__order{
+    background-color: #C4E5E0;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    width: 400px;
+    color: #C895C3;
+    border-radius: 4px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    box-shadow: 7px 13px 37px #C4E5E0;
+
+
+
+}
+
+.form__order__titles{
+
+    font-size: 20px;
+
+}
+
+.form__order__controls{
+    width: 70%;
+    background: #C4E5E0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 18px;
+
+}
+
+.form__order__botton{
+    text-decoration: underline;
+    width: 100%;
+    background-color: #C895C3;
+    border: none;
+    padding: 12px;
+    color: #FEFDF4;
+    margin: 16px 0;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.title{
+    
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align: center;
+    font-size: 70px;
+    color: #C895C3;
+    padding: 100px;
+    margin: 0 auto;
+    
+}
+
+.title__from{
+
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align: center;
+    font-size: 70px;
+    color: #C895C3;
+    
+    margin: 0 auto;
+
+}
+
+.title__contactanos{
+
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align:start;
+    font-size: 45px;
+    color: #C895C3;
+    padding: 60px;
+
+}
+
+.contacto{
+margin-left: 80px;
+margin-top: 70px;
+
+}
+
+.title__visitanos{
+
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align:start;
+    font-size: 35px;
+    color: #C895C3;
+    padding: 60px;
+ 
+
+}
+
+.visitanos{
+
+    margin-left: 80px;
+    margin-top: 70px;
+}
+
+
+.pasteleria{
+    position: relative;
+    border: 5px solid #8ACBC1;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-left: 25%;
+    margin-top: 70px;
+}
+/*margin-left: 30%; margin-bottom: 100px; margin-top: 100px;*/
+.text__quienesSomos{
+    margin: 60px;
+    text-align: center;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: bold;
+}
+
+.title__comoComprar{
+
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align:start;
+    font-size: 75px;
+    color: #C895C3;
+    padding: 60px;
+ 
+
+}
+
+.comoComprar{
+    margin-right: 80px;
+    margin-left: 120px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.comoComprar__list{
+    list-style-type: decimal;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+
+}
+
+
+footer{
+
+    background-color: #8ACBC1;
+
+}
+
+
+.footer__content{
+    
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+footer a{
+
+    text-decoration: none;
+    
+    
+}
+
+
+.footer__title{
+
+    font-style: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+
+
+}
+
+ul{
+   
+    list-style: none;
+   
+    
+}
+
+.footer__link{
+
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    margin:  15px;
+    padding: 20px; 
+}
+
+
+
+.footer__copyright{
+    color: #FEFDF4;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 1125px) {
+
+    .header__a{
+    
+        font-size: 15px;
+        
+        padding: 10px;
+        margin: 10px;
+    }
+
+    header{
+
+      
+        box-shadow: 0 10px 12px #C4E5E0;
+    
+    }
+
+    header nav{
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items:center;
+    
+        
+    }
+
+    
+    .catalogue__position{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        column-gap: 10px;
+        
+     
+    }
+
+    .catalogue__description{
+        margin: 0 auto;
+    }
+
+    .pasteleria{
+        
+        width: 550px;
+        height: 300px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-right: 65px;
+        margin-left: 130px;
+    }
+
+    .logo{
+
+        position: relative;
+        width: 220px;
+        height: 170px;
+        margin: 0 auto;
+        left: 35%;
+        
+      
+    }
+    
+    
+}
+
+
+@media (max-width: 775px){
+
+    body{
+        font-size: 90%;
+    }
+
+    .header__a{
+    
+        font-size: 10px;
+        
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+   
+    .catalogue__position{
+
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        
+     
+    }
+
+    .catalogue__description{
+        margin: 0 auto;
+    }
+
+    .catalogue{
+    
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        border: 5px solid #8ACBC1;
+    
+    }
+
+    header{
+
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2px; 
+    }
+  
+  
+
+    .logo{
+
+        position: relative;
+        width: 240px;
+        height: 190px;
+        margin: 0 auto;
+        left: 30%;
+        
+      
+    }
+
+    
+    header nav{
+
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1,1fr);
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    
+     
+    
+    }
+
+    .pasteleria{
+        
+        width: 450px;
+        height: 300px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-right: 65px;
+        margin-left: 130px;
+    }
+   
+    iframe{
+        width: 450px;
+        height: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 695px){
+
+    .catalogue{
+    
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        border: 5px solid #8ACBC1;
+   
+    
+    }
+
+    .logo{
+
+        position: relative;
+        width: 220px;
+        height: 170px;
+        margin: 0 auto;
+        left: 35%;
+        
+      
+    }
+
+    iframe{
+        width: 450px;
+        height: 300px;
+        margin-left: 30px;
+    }
+
+}
+
+@media (max-width: 598px){
+
+    .logo{
+
+        position: relative;
+        width: 200px;
+        height: 150px;
+        margin: 0 auto;
+        left: 35%;
+        
+    }
+
+    .header__a{
+    
+        font-size: 10px;
+        
+        padding: 5px;
+        margin: 3px;
+        margin-right: 3px;
+    }
+    header nav{
+
+        display: flex;
+        width: 100%;
+        justify-content:space-around;
+        align-items:stretch;
+        
+    }
+    iframe{
+        width: 300px;
+        height: 150px;
+        margin-left: 30px;
+    }
+
+}
+
+@media (max-width: 376px){
+
+    .logo{
+
+        position: relative;
+        width: 100px;
+        height: 70px;
+        margin: 0 auto;
+        left: 40%;
+        
+      
+    }
+
+    .header__a{
+    
+        font-size: 6px;
+        
+        padding: 5px;
+        margin: 0px;
+    }
+
+
+    header{
+
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2px; 
+    }
+  
+    .logo{
+        margin: 0 auto;
+    }
+
+    
+    header nav{
+
+    display: grid;
+    width: 100%;
+    justify-content:baseline;
+    grid-template-columns: repeat(1,1fr);
+    list-style: none;
+    text-align:start;
+    margin: 0 auto;
+    
+     
+    
+    }
+
+    .pasteleria{
+        
+        width: 250px;
+        height: 150px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-right: 65px;
+        margin-left: 70px;
+    }  
+
+
+
+    .footer__content{
+        
+        color: black;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        
+        
+    }
+
+
+
+    .footer__title{
+
+        font-style: 'Open Sans', sans-serif;
+        font-size: 12px;
+        margin-top: 15px;
+        font-weight: 800;
+
+
+    }
+
+
+
+    .footer__link{
+
+        list-style: none;
+        display: flex;
+        margin:  11px;
+        padding: 10px; 
+    }
+
+
+
+    .footer__copyright{
+        color: #FEFDF4;
+        text-align: center;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    
+.form__order{
+    background-color: #C4E5E0;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    width: 200px;
+    color: #C895C3;
+    border-radius: 4px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    box-shadow: 7px 13px 37px #C4E5E0;
+
+
+
+}
+
+
+.title{
+    
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: #C895C3;
+    padding: 100px;
+    margin: 0 auto;
+    
+}
+
+.title__from{
+
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #C895C3;
+    
+    margin: 0 auto;
+
+}
+
+iframe{
+    width: 250px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.slider__img{
+    
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 90px;
+    
+    display: flex;
+    flex-direction:column;
+    right: 10px;
+    padding: 10px;
+    
+
+}
+
+.title__comoComprar{
+
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    text-align:center;
+    font-size: 45px;
+    color: #C895C3;
+    padding: 50px;
+ 
+
+}
+
+
+}
