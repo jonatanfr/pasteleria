@@ -138,14 +138,15 @@ body{
 header{
 
     background-color: #8ACBC1;
-    margin-top: 30px;
+   /* margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 25px #C4E5E0;
     width: 100%;
-
+    */
+    box-shadow: 0 10px 25px #C4E5E0;
+    
 }
 
-
+/*
 header nav{
 
     display: flex;
@@ -165,13 +166,14 @@ header li{
     
 }
 
+*/
+
 .header__a{
     color: #FFFDF7;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 20px;
-    margin: 30px;
+    margin-right: 40px;
 }
 
 .main__index{
@@ -184,6 +186,7 @@ header li{
     ;
     grid-template-columns: 1 1fr;
     row-gap: 10px;
+    margin-top: 50px;
 
 
 }
@@ -386,50 +389,119 @@ header li{
 
 }
 
-.form__order{
-    background-color: #C4E5E0;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    width: 400px;
-    color: #C895C3;
-    border-radius: 4px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    box-shadow: 7px 13px 37px #C4E5E0;
 
 
 
+.form{
+    width: 340px;
+    height: 560px;
+    background: #8ACBC1;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
 }
-
-.form__order__titles{
-
-    font-size: 20px;
-
+.form__Pedido{
+    width: 340px;
+    height: 680px;
+    background: #8ACBC1;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
 }
-
-.form__order__controls{
-    width: 70%;
-    background: #C4E5E0;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font-size: 18px;
-
+.titleForm{
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #000;
+    border-bottom: 3px solid #C895C3;
 }
-
-.form__order__botton{
-    text-decoration: underline;
+.inpurForm{
     width: 100%;
-    background-color: #C895C3;
-    border: none;
-    padding: 12px;
-    color: #FEFDF4;
-    margin: 16px 0;
-    font-size: 16px;
-    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    border-color: #FEFDF4;
+    font-family:"Montserrat", sans-serif;
+    transition: all 3s;
+    border-bottom: 2px solid #C895C3;
 
+}
+
+.form__select{
+
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: white;
+    outline: none;
+    resize: none;
+    border: 0;
+    border-color: #FEFDF4;
+    font-family:"Montserrat", sans-serif;
+    transition: all 3s;
+    border-bottom: 2px solid #C895C3;
+
+}
+
+.form__select:focus{
+    border-bottom: 2px solid #e9e8e8;
+}
+
+.inpurForm:focus{
+    border-bottom: 2px solid #e9e8e8;
+}
+
+p::before{
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #000;
+}
+.buttonForm{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family:"Montserrat", sans-serif;
+    border: 2px solid #C895C3;
+    background: #C895C3;
+    border-radius: 10px;
+    color: #e9e8e8;
+    cursor: pointer;
+    transition: all .3s;
+}
+.buttonForm:hover{
+    background: #e9e8e8;
+    color: #C895C3;
+}
+.formContact{
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: #C895C3;
+    color: white;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #C895C3;
+}
+
+.formContact_span{
+    margin: 0 5px 0 15px;
 }
 
 .title{
@@ -557,15 +629,20 @@ footer a{
     
 }
 
-
-.footer__title{
-
+.font-weight-bold{
     font-style: 'Open Sans', sans-serif;
-    font-size: 20px;
-    margin-top: 30px;
-    font-weight: 800;
+    
+}
 
 
+.col-3 p{
+    margin: 0;
+}
+
+.spaceSocialNetworks{
+    margin-left: 30px;
+    color: black;
+    
 }
 
 ul{
@@ -575,16 +652,12 @@ ul{
     
 }
 
-.footer__link{
-
-    list-style: none;
-    display: flex;
-    flex-direction: column; 
-    margin:  15px;
-    padding: 20px; 
+.imgLogoFooter{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    
 }
-
-
 
 .footer__copyright{
     color: #FEFDF4;
@@ -593,7 +666,9 @@ ul{
     margin-top: 10px;
 }
 
-
+.font-weight-bold{
+    margin-bottom: 10px;
+}
 
 
 @media (max-width: 1125px) {
