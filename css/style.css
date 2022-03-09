@@ -1,0 +1,934 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  background-color: #FFFDF7;
+}
+
+.logo {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  left: 40%;
+}
+
+.bubbles_animate {
+  width: 100%;
+  height: 100vh;
+}
+
+/*bubbles*/
+.bubble {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #C895C3;
+  opacity: 0.3;
+  position: absolute;
+  bottom: -150;
+  left: 5%;
+  animation: bubbles 3s linear infinite;
+}
+
+.bubble:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation: bubbles 3s linear infinite;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation: bubbles 3s linear infinite;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation: bubbles 1.5s linear infinite;
+  animation-delay: 7s;
+}
+
+.bubble:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation: bubbles 6s linear infinite;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation: bubbles 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation: bubbles 4s linear infinite;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation: bubbles 4s linear infinite;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(8) {
+  width: 100px;
+  height: 100px;
+  left: 52%;
+  animation: bubbles 5s linear infinite;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation: bubbles 3s linear infinite;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation: bubbles 3s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes bubbles {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+header {
+  background-color: #8ACBC1;
+  box-shadow: 0 10px 25px #C4E5E0;
+}
+
+.header__a {
+  color: #FFFDF7;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+.main__index {
+  display: grid;
+  grid-template-areas: "slider" "instagram" "publicity";
+  grid-template-columns: 1 1fr;
+  row-gap: 10px;
+  margin-top: 50px;
+}
+
+.carousel-inner {
+  width: 90%;
+  margin: 0 auto;
+  height: 570px;
+  border-radius: 20px;
+  border: 5px solid #8ACBC1;
+  margin-bottom: 60px;
+}
+
+.slider {
+  grid-area: slider;
+}
+
+.slider__img {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  top: 90px;
+  left: 190px;
+}
+
+.instagram {
+  background-color: #C895C3;
+  margin: 0 0 40px 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  grid-area: instagram;
+}
+
+.instagram__h2 {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  color: #8ACBC1;
+}
+
+.instagram__h3 {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: #8ACBC1;
+  margin-bottom: 25px;
+}
+
+.instagram__logo {
+  color: #8ACBC1;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  left: 48%;
+  width: 50px;
+  height: 50px;
+}
+
+.publicity {
+  background-color: #ffffff;
+  margin: 0 0 40px 0;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  border: 5px solid #e9e8e8;
+  border-radius: 10px;
+  grid-area: publicity;
+}
+
+.publicity__img {
+  width: 30px;
+  height: 30px;
+  animation: moove 2.5s linear infinite;
+}
+
+@keyframes moove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.publicity__position {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 20px;
+}
+
+.publicity__position--whatsapp {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.publicity__position--whatsapp img {
+  margin-right: 20px;
+}
+
+.publicity__position p {
+  margin-left: 50px;
+}
+
+.publicity__position--creditCard {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.publicity__position--creditCard img {
+  margin-right: 20px;
+}
+
+.catalogue {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  border: 5px solid #8ACBC1;
+}
+
+.catalogue__position {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 90px;
+  margin: 0 auto;
+}
+
+.catalogue__position__product {
+  flex-direction: row;
+}
+
+.catalogue__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.catalogue__description {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  width: 350px;
+  height: 350px;
+  justify-items: center;
+}
+
+.form {
+  width: 340px;
+  height: 560px;
+  background: #8ACBC1;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+}
+
+.form input {
+  border: 5px;
+  border-radius: 5px;
+}
+
+.form select {
+  border: 5px;
+  border-radius: 5px;
+}
+
+.form__Pedido {
+  width: 340px;
+  height: 680px;
+  background: #8ACBC1;
+  border-radius: 8px;
+  box-shadow: 0 0 30px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+}
+
+.titleForm {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #000;
+  border-bottom: 3px solid #C895C3;
+}
+
+.inpurForm {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  border-color: #FEFDF4;
+  font-size: 20px;
+  transition: all 3s;
+  border-bottom: 2px solid #C895C3;
+}
+
+.form__Pedido input {
+  border: 5px;
+  border-radius: 5px;
+}
+
+.form__Pedido select {
+  border: 5px;
+  border-radius: 5px;
+}
+
+.form__select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: white;
+  outline: none;
+  resize: none;
+  border: 0;
+  border-color: #FEFDF4;
+  font-family: "Montserrat", sans-serif;
+  transition: all 3s;
+  border-bottom: 2px solid #C895C3;
+}
+
+.form__select:focus {
+  border-bottom: 2px solid #e9e8e8;
+}
+
+.inpurForm:focus {
+  border-bottom: 2px solid #e9e8e8;
+}
+
+p::before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.buttonForm {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #C895C3;
+  background: #C895C3;
+  border-radius: 10px;
+  color: #e9e8e8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttonForm:hover {
+  background: #e9e8e8;
+  color: #C895C3;
+}
+
+.formContact {
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #C895C3;
+  color: white;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #C895C3;
+}
+
+.formContact_span {
+  margin: 0 5px 0 15px;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  text-align: center;
+  font-size: 70px;
+  color: #C895C3;
+  padding: 100px;
+  margin: 0 auto;
+}
+
+.title__from {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  text-align: center;
+  font-size: 70px;
+  color: #C895C3;
+  margin: 0 auto;
+}
+
+.title__contactanos {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  text-align: start;
+  font-size: 45px;
+  color: #C895C3;
+  padding: 60px;
+}
+
+.contacto {
+  margin-left: 80px;
+  margin-top: 70px;
+}
+
+.title__visitanos {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  text-align: start;
+  font-size: 35px;
+  color: #C895C3;
+  padding: 60px;
+}
+
+.visitanos {
+  margin-left: 80px;
+  margin-top: 70px;
+}
+
+.pasteleria {
+  position: relative;
+  border: 5px solid #8ACBC1;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-left: 25%;
+  margin-top: 70px;
+}
+
+/*margin-left: 30%; margin-bottom: 100px; margin-top: 100px;*/
+.text__quienesSomos {
+  margin: 60px;
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: bold;
+}
+
+.title__comoComprar {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  text-align: start;
+  font-size: 75px;
+  color: #C895C3;
+  padding: 60px;
+}
+
+.comoComprar {
+  margin-right: 80px;
+  margin-left: 120px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.comoComprar__list {
+  list-style-type: decimal;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+
+footer {
+  background-color: #8ACBC1;
+}
+
+.footer__content {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.font-weight-bold {
+  font-style: "Open Sans", sans-serif;
+}
+
+.col-3 p {
+  margin: 0;
+}
+
+.spaceSocialNetworks {
+  margin-left: 30px;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.imgLogoFooter {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  color: #FEFDF4;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.font-weight-bold {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1125px) {
+  .header__a {
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  header {
+    box-shadow: 0 10px 12px #C4E5E0;
+  }
+
+  header nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalogue__position {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    column-gap: 10px;
+  }
+
+  .catalogue__description {
+    margin: 0 auto;
+  }
+
+  .pasteleria {
+    width: 550px;
+    height: 300px;
+    margin-top: 100px;
+    border: 5px solid #8ACBC1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-right: 65px;
+    margin-left: 130px;
+  }
+
+  .logo {
+    position: relative;
+    width: 220px;
+    height: 170px;
+    margin: 0 auto;
+    left: 35%;
+  }
+}
+@media (max-width: 775px) {
+  body {
+    font-size: 90%;
+  }
+
+  .header__a {
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .catalogue__position {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .catalogue__description {
+    margin: 0 auto;
+  }
+
+  .catalogue {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 5px solid #8ACBC1;
+  }
+
+  header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2px;
+  }
+
+  .logo {
+    position: relative;
+    width: 240px;
+    height: 190px;
+    margin: 0 auto;
+    left: 30%;
+  }
+
+  header nav {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .pasteleria {
+    width: 450px;
+    height: 300px;
+    margin-top: 100px;
+    border: 5px solid #8ACBC1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-right: 65px;
+    margin-left: 130px;
+  }
+
+  iframe {
+    width: 450px;
+    height: 300px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 695px) {
+  .catalogue {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 5px solid #8ACBC1;
+  }
+
+  .logo {
+    position: relative;
+    width: 220px;
+    height: 170px;
+    margin: 0 auto;
+    left: 35%;
+  }
+
+  iframe {
+    width: 450px;
+    height: 300px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 598px) {
+  .logo {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    left: 35%;
+  }
+
+  .header__a {
+    font-size: 10px;
+    padding: 5px;
+    margin: 3px;
+    margin-right: 3px;
+  }
+
+  header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  iframe {
+    width: 300px;
+    height: 150px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 376px) {
+  .logo {
+    position: relative;
+    width: 100px;
+    height: 70px;
+    margin: 0 auto;
+    left: 40%;
+  }
+
+  .header__a {
+    font-size: 6px;
+    padding: 5px;
+    margin: 0px;
+  }
+
+  header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  header nav {
+    display: grid;
+    width: 100%;
+    justify-content: baseline;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    text-align: start;
+    margin: 0 auto;
+  }
+
+  .pasteleria {
+    width: 250px;
+    height: 150px;
+    margin-top: 100px;
+    border: 5px solid #8ACBC1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-right: 65px;
+    margin-left: 70px;
+  }
+
+  .footer__content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer__title {
+    font-style: "Open Sans", sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: 800;
+  }
+
+  .footer__link {
+    list-style: none;
+    display: flex;
+    margin: 11px;
+    padding: 10px;
+  }
+
+  .footer__copyright {
+    color: #FEFDF4;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .form__order {
+    background-color: #C4E5E0;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    width: 200px;
+    color: #C895C3;
+    border-radius: 4px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    box-shadow: 7px 13px 37px #C4E5E0;
+  }
+
+  .title {
+    font-family: "Dancing Script", cursive;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: #C895C3;
+    padding: 100px;
+    margin: 0 auto;
+  }
+
+  .title__from {
+    font-family: "Dancing Script", cursive;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #C895C3;
+    margin: 0 auto;
+  }
+
+  iframe {
+    width: 250px;
+    height: 100px;
+    margin-left: 30px;
+  }
+
+  .slider__img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    right: 10px;
+    padding: 10px;
+  }
+
+  .title__comoComprar {
+    font-family: "Dancing Script", cursive;
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    color: #C895C3;
+    padding: 50px;
+  }
+}
+footer {
+  background-color: #8ACBC1;
+}
+
+.footer__content {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.font-weight-bold {
+  font-style: "Open Sans", sans-serif;
+}
+
+.col-3 p {
+  margin: 0;
+}
+
+.spaceSocialNetworks {
+  margin-left: 30px;
+  color: black;
+}
+
+.imgLogoFooter {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  color: #FEFDF4;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.font-weight-bold {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
