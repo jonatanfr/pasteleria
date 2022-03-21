@@ -147,6 +147,7 @@ ul {
   list-style: none;
 }
 
+/*MAP*/
 .main__index {
   display: grid;
   grid-template-areas: "slider" "instagram" "publicity";
@@ -456,7 +457,7 @@ p::before {
   margin: 0 auto;
 }
 
-.title__from {
+.title__form, .title__form_principal {
   font-family: "Dancing Script", cursive;
   position: relative;
   text-align: center;
@@ -465,13 +466,22 @@ p::before {
   margin: 0 auto;
 }
 
-.title__contactanos {
+.title__form_principal {
+  margin-bottom: 120px;
+  margin-top: 50px;
+  font-size: 90px;
+}
+
+.subTitles, .title__visitanos, .title__contactanos {
   font-family: "Dancing Script", cursive;
   position: relative;
   text-align: start;
-  font-size: 45px;
   color: #C895C3;
   padding: 60px;
+}
+
+.title__contactanos {
+  font-size: 65px;
 }
 
 .contacto {
@@ -480,12 +490,7 @@ p::before {
 }
 
 .title__visitanos {
-  font-family: "Dancing Script", cursive;
-  position: relative;
-  text-align: start;
-  font-size: 35px;
-  color: #C895C3;
-  padding: 60px;
+  font-size: 45px;
 }
 
 .visitanos {
@@ -502,7 +507,6 @@ p::before {
   margin-top: 70px;
 }
 
-/*margin-left: 30%; margin-bottom: 100px; margin-top: 100px;*/
 .text__quienesSomos {
   margin: 60px;
   text-align: center;
@@ -514,7 +518,7 @@ p::before {
   font-family: "Dancing Script", cursive;
   position: relative;
   text-align: start;
-  font-size: 75px;
+  font-size: 70px;
   color: #C895C3;
   padding: 60px;
 }

@@ -1,3 +1,14 @@
+/*MAP*/
+$fontSize: (
+    h1: 70px,
+    h2: 65px,
+    h3: 45px,
+   );
+   
+   $h1: map-get($fontSize, h1);
+   $h2: map-get($fontSize, h2);
+   $h3: map-get($fontSize, h3);
+
 
 .main__index{
 
@@ -10,8 +21,6 @@
     grid-template-columns: 1 1fr;
     row-gap: 10px;
     margin-top: 50px;
-
-
 }
 
 
@@ -123,18 +132,21 @@
     
 }
 
-.publicity__position{
+@mixin basicPosition {
     list-style: none;
     display: flex;
     flex-direction: row; 
+    
+}
+
+.publicity__position{
+    @include basicPosition;
     justify-content:space-around;
     margin:  15px;
     padding: 20px;
 }
 .publicity__position--whatsapp{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+    @include basicPosition;
 
 }
 .publicity__position--whatsapp img{
@@ -146,9 +158,7 @@
 }
 
 .publicity__position--creditCard{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+    @include basicPosition;
 }
 
 .publicity__position--creditCard img{
@@ -260,6 +270,8 @@
     color: #000;
     border-bottom: 3px solid #C895C3;
 }
+
+
 .inpurForm{
     width: 100%;
     padding: 10px;
@@ -353,34 +365,46 @@ p::before{
     font-family: 'Dancing Script', cursive;
     position: relative;
     text-align: center;
-    font-size: 70px;
+    font-size: $h1;
     color: #C895C3;
     padding: 100px;
     margin: 0 auto;
     
 }
 
-.title__from{
+.title__form{
 
     font-family: 'Dancing Script', cursive;
     position: relative;
     text-align: center;
-    font-size: 70px;
+    font-size: $h1;
     color: #C895C3;
     
     margin: 0 auto;
 
 }
 
-.title__contactanos{
+.title__form_principal{
+    @extend .title__form;
+     margin-bottom: 120px;
+     margin-top: 50px;
+     font-size: $h1 + 20px;
+ }
 
+.subTitles{
     font-family: 'Dancing Script', cursive;
     position: relative;
     text-align:start;
-    font-size: 45px;
     color: #C895C3;
     padding: 60px;
+}
 
+
+.title__contactanos{
+
+    @extend .subTitles;
+    font-size: 65px;
+    
 }
 
 .contacto{
@@ -389,16 +413,10 @@ margin-top: 70px;
 
 }
 
-
 .title__visitanos{
 
-    font-family: 'Dancing Script', cursive;
-    position: relative;
-    text-align:start;
-    font-size: 35px;
-    color: #C895C3;
-    padding: 60px;
- 
+    @extend .subTitles;
+    font-size: $h3;
 }
 
 .visitanos{
@@ -416,7 +434,7 @@ margin-top: 70px;
     margin-left: 25%;
     margin-top: 70px;
 }
-/*margin-left: 30%; margin-bottom: 100px; margin-top: 100px;*/
+
 .text__quienesSomos{
     margin: 60px;
     text-align: center;
@@ -429,7 +447,7 @@ margin-top: 70px;
     font-family: 'Dancing Script', cursive;
     position: relative;
     text-align:start;
-    font-size: 75px;
+    font-size: $h1;
     color: #C895C3;
     padding: 60px;
  
