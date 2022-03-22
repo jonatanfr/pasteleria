@@ -142,6 +142,9 @@ header {
   font-weight: bold;
   margin-right: 40px;
 }
+.header__a:hover {
+  color: #C4E5E0;
+}
 
 ul {
   list-style: none;
@@ -179,39 +182,39 @@ ul {
 
 .instagram {
   background-color: #C895C3;
-  margin: 0 0 40px 0;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 0px;
   border: 5px solid #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   grid-area: instagram;
 }
-
-.instagram__h2 {
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  color: #8ACBC1;
-}
-
-.instagram__h3 {
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  color: #8ACBC1;
-  margin-bottom: 25px;
-}
-
-.instagram__logo {
-  color: #8ACBC1;
+.instagram .fa-instagram {
   position: relative;
   margin-top: 20px;
   margin-bottom: 10px;
   left: 48%;
   width: 50px;
   height: 50px;
+  color: #FFFDF7;
+}
+
+.instagram__h2 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  color: #FFFDF7;
+}
+
+.instagram__h3 {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFDF7;
+  margin-bottom: 25px;
 }
 
 .publicity {
@@ -222,6 +225,7 @@ ul {
   border: 5px solid #e9e8e8;
   border-radius: 10px;
   grid-area: publicity;
+  color: #C895C3;
 }
 
 .publicity__img {
@@ -294,7 +298,7 @@ ul {
 }
 
 .catalogue__title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 25px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -306,7 +310,7 @@ ul {
 }
 
 .catalogue__description {
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 350px;
   height: 350px;
   justify-items: center;
@@ -346,7 +350,7 @@ ul {
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
 }
 
@@ -370,6 +374,7 @@ ul {
   font-size: 20px;
   transition: all 3s;
   border-bottom: 2px solid #C895C3;
+  font-family: "Poppins", sans-serif;
 }
 
 .form__Pedido input {
@@ -443,6 +448,19 @@ p::before {
   box-shadow: 10px 10px 40px -14px #C895C3;
 }
 
+.formContact__pedido {
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #C895C3;
+  color: white;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 10px 10px 40px -14px #C895C3;
+}
+
 .formContact_span {
   margin: 0 5px 0 15px;
 }
@@ -488,6 +506,10 @@ p::before {
   margin-left: 80px;
   margin-top: 70px;
 }
+.contacto div {
+  font-family: "Poppins", sans-serif;
+  color: #C895C3;
+}
 
 .title__visitanos {
   font-size: 45px;
@@ -510,8 +532,11 @@ p::before {
 .text__quienesSomos {
   margin: 60px;
   text-align: center;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
+  font-size: 20px;
+  color: #C895C3;
+  line-height: 45px;
 }
 
 .title__comoComprar {
@@ -532,56 +557,12 @@ p::before {
 
 .comoComprar__list {
   list-style-type: decimal;
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #C895C3;
 }
-
-footer {
-  background-color: #8ACBC1;
-}
-
-.footer__content {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-.font-weight-bold {
-  font-style: "Open Sans", sans-serif;
-}
-
-.col-3 p {
-  margin: 0;
-}
-
-.spaceSocialNetworks {
-  margin-left: 30px;
-  color: black;
-}
-
-ul {
-  list-style: none;
-}
-
-.imgLogoFooter {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.footer__copyright {
-  color: #FEFDF4;
-  text-align: center;
-  position: relative;
-  margin-top: 10px;
-}
-
-.font-weight-bold {
-  margin-bottom: 10px;
+.comoComprar__list li {
+  line-height: 45px;
 }
 
 @media (max-width: 1125px) {
@@ -892,10 +873,17 @@ ul {
 }
 footer {
   background-color: #8ACBC1;
+  color: #FFFDF7;
+}
+footer li {
+  line-height: 40px;
+}
+footer p {
+  line-height: 10px;
 }
 
 .footer__content {
-  color: black;
+  color: #FFFDF7;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -905,17 +893,13 @@ footer a {
   text-decoration: none;
 }
 
-.font-weight-bold {
-  font-style: "Open Sans", sans-serif;
-}
-
 .col-3 p {
   margin: 0;
 }
 
 .spaceSocialNetworks {
   margin-left: 30px;
-  color: black;
+  color: #FFFDF7;
 }
 
 .imgLogoFooter {
@@ -932,7 +916,24 @@ footer a {
 }
 
 .font-weight-bold {
+  font-style: "Open Sans", sans-serif;
   margin-bottom: 10px;
+  line-height: 50px;
+}
+
+.col-3 p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+ul .fa-instagram {
+  color: #FFFDF7;
+}
+
+.fa-facebook-f {
+  color: #FFFDF7;
 }
 
 /*# sourceMappingURL=style.css.map */

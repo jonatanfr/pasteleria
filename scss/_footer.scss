@@ -2,13 +2,19 @@
 footer{
 
     background-color: $colorVerde;
+    color: $colorFondo;
 
+    li{
+        line-height: 40px; 
+    }
+    p{
+        line-height: 10px; 
+    } 
 }
-
 
 .footer__content{
     
-    color: black;
+    color: $colorFondo;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -23,11 +29,6 @@ footer a{
     
 }
 
-.font-weight-bold{
-    font-style: 'Open Sans', sans-serif;
-    
-}
-
 
 .col-3 p{
     margin: 0;
@@ -35,9 +36,10 @@ footer a{
 
 .spaceSocialNetworks{
     margin-left: 30px;
-    color: black;
+    color: $colorFondo;
     
 }
+
 
 .imgLogoFooter{
     width: 100px;
@@ -54,5 +56,28 @@ footer a{
 }
 
 .font-weight-bold{
+    font-style: 'Open Sans', sans-serif;
     margin-bottom: 10px;
+    line-height: 50px;  
 }
+
+.col-3 p{
+    margin: 0;
+}
+
+ul{
+   
+    list-style: none;
+    
+   .fa-instagram{
+    color: $colorFondo;
+   }
+    
+}
+.fa-facebook-f{
+    color: $colorFondo;
+}
+
+
+
+
