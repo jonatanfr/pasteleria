@@ -38,15 +38,10 @@ $fontSize: (
 
 }
 
-
-.slider__img{
-    
-    width: 350px;
-    height: 350px;
+.w-100{  
     position: relative;
-    top: 90px;
-    left: 190px;
-
+    width: 100%;
+    display: block;
 }
 
 
@@ -80,9 +75,7 @@ $fontSize: (
     position: relative;
     text-align: center;
     font-size: 40px;
-    color: $colorFondo;
-    
-    
+    color: $colorFondo; 
 }
 
 .instagram__h3{
@@ -92,10 +85,7 @@ $fontSize: (
     text-align: center;
     font-size: 20px;
     color: $colorFondo;
-    
     margin-bottom: 25px;
-    
-    
 }
 
 
@@ -176,24 +166,16 @@ $fontSize: (
 }
 
 .catalogue__position{
-
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 90px;
     margin: 0 auto;
-    
-    
- 
 }
-
 
 .catalogue__position__product{
-
     flex-direction: row;
-
 }
-
 
 .catalogue__title{
     font-family: 'Nunito', sans-serif;
@@ -206,21 +188,14 @@ $fontSize: (
     margin-top: 40px;
     margin-bottom: 40px;
     
-
 }
 
-
 .catalogue__description{
-
     font-family: 'Poppins', sans-serif;
     width: 350px;
     height: 350px;
     justify-items: center;
-    
-
 }
-
-
 
 .form {
     width: 340px;
@@ -423,24 +398,22 @@ p::before{
 }
 
 .contacto{
-margin-left: 80px;
-margin-top: 70px;
+    margin-left: 80px;
+    margin-top: 70px;
 
-    div{
-        font-family: 'Poppins', sans-serif;
-        color: $colorLila;
-    }
+        div{
+            font-family: 'Poppins', sans-serif;
+            color: $colorLila;
+        }
 
 }
 
 .title__visitanos{
-
     @extend .subTitles;
     font-size: $h3;
 }
 
 .visitanos{
-
     margin-left: 80px;
     margin-top: 70px;
 }
@@ -474,8 +447,6 @@ margin-top: 70px;
     font-size: $h1;
     color: #C895C3;
     padding: 60px;
- 
-
 }
 
 .comoComprar{
@@ -497,77 +468,159 @@ margin-top: 70px;
 
 }
 
+@media (max-width: 1260px) {
 
-
-@media (max-width: 1125px) {
-
-    .header__a{
+    .carousel-inner{
+        height: 470px;
+    }
     
-        font-size: 15px;
-        
-        padding: 10px;
-        margin: 10px;
+}
+
+@media (max-width: 1238px) {
+    .carousel-inner{
+        height: 400px;
     }
 
-    header{
-
-      
-        box-shadow: 0 10px 12px #C4E5E0;
-    
-    }
-
-    header nav{
-
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items:center;
-    
-        
-    }
-
-    
-    .catalogue__position{
-
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        
-        margin: 0 auto;
-        justify-content: center;
-        text-align: center;
-        column-gap: 10px;
-        
-     
-    }
-
-    .catalogue__description{
-        margin: 0 auto;
+    .d-md-block{
+        top: 5px;
     }
 
     .pasteleria{
         
-        width: 550px;
+        width: 450px;
         height: 300px;
         margin-top: 100px;
         border: 5px solid #8ACBC1;
         border-radius: 10px;
         margin-bottom: 30px;
-        margin-right: 65px;
-        margin-left: 130px;
-    }
-
-    .logo{
-
-        position: relative;
-        width: 220px;
-        height: 170px;
         margin: 0 auto;
-        left: 35%;
-        
-      
+        display: block;
+    }
+}
+
+
+@media (max-width: 1118px) {
+
+    .carousel-inner{
+        height: 400px;
     }
     
+    .carousel-item img{
+       display: block;
+       max-width: 100%;
+       height: auto;
+       margin: 0 auto;
+    }
+
+    .header__a{
     
+        font-size: 15px;
+        padding: 0px;
+        margin: 5px 5px 5px;
+    }
+    
+    .pasteleria{
+        
+        width: 450px;
+        height: 300px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    
+}
+
+@media (max-width: 1038px) {
+    .carousel-inner{
+        height: 300px;
+    }
+    .instagram{
+        .fa-instagram{
+            left: 46%; 
+        }
+    }
+
+    .py-4{
+        width: 100%;
+    }
+
+    iframe{
+        width: 450px;
+        height: 300px;
+        margin-left: 30px;
+    }
+
+    .catalogue{
+    
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        border: 5px solid #8ACBC1;
+    
+    }
+
+    .catalogue__position{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-auto-flow: dense;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;   
+    }
+
+    .catalogue__description{
+        margin: 0 auto;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        height: 330px;
+        justify-items: center;
+    }
+  
+}
+
+@media (max-width: 792px) {
+    .carousel-inner{
+        height: 280px;
+    }
+
+    .py-4{
+        width: 100%;
+    }
+
+    .catalogue__position{  
+        grid-auto-flow: dense;
+        display: grid;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;    
+    }
+
+    .catalogue__description{
+        margin: 0 auto;
+    }
+   
+
+    .catalogue{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        border: 5px solid #8ACBC1;
+    }
+
+    .catalogue__position{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-auto-flow: dense;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;   
+    }
+
 }
 
 
@@ -585,8 +638,6 @@ margin-top: 70px;
         margin: 0px;
     }
 
-
-   
     .catalogue__position{
 
         display: grid;
@@ -594,9 +645,7 @@ margin-top: 70px;
         
         margin: 0 auto;
         justify-content: center;
-        text-align: center;
-        
-     
+        text-align: center; 
     }
 
     .catalogue__description{
@@ -619,23 +668,16 @@ margin-top: 70px;
         grid-template-columns: repeat(1,1fr);
         column-gap: 2px; 
     }
-  
-  
 
     .logo{
-
         position: relative;
         width: 240px;
         height: 190px;
         margin: 0 auto;
-        left: 30%;
-        
-      
+        left: 30%; 
     }
 
-    
     header nav{
-
     display: grid;
     width: 100%;
     justify-content: center;
@@ -643,21 +685,17 @@ margin-top: 70px;
     list-style: none;
     text-align: center;
     margin: 0 auto;
-    
-     
-    
     }
 
     .pasteleria{
-        
         width: 450px;
         height: 300px;
         margin-top: 100px;
         border: 5px solid #8ACBC1;
         border-radius: 10px;
         margin-bottom: 30px;
-        margin-right: 65px;
-        margin-left: 130px;
+        margin: 0 auto;
+        display: block;
     }
    
     iframe{
@@ -665,99 +703,285 @@ margin-top: 70px;
         height: 300px;
         margin-left: 30px;
     }
+
+    .instagram{
+    
+        .fa-instagram{ 
+            left: 45%; 
+        }
+    }
+
+    .pasteleria{
+        width: 450px;
+        height: 300px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        display: block;
+    }
+    .catalogue__description{
+        width: 350px;
+        height: auto;
+        font-size: 14px;
+        margin-bottom: 55px;
+        
+    }
+    .catalogue__title{
+        margin-top: 20px;
+        margin-bottom: 10px;   
+    }
+    .title__form{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 732px) {
+    .carousel-inner{
+        height: 250px;
+    }
+
+    .pasteleria{   
+        width: 450px;
+        height: 300px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    iframe{
+        width: 450px;
+        height: 300px;
+        margin-left: 30px;
+    }
+    
+    .catalogue__description{
+        font-family: 'Poppins', sans-serif;
+        width: 350px;
+        height: auto;
+        justify-items: center;
+        font-size: 14px;
+        margin-bottom: 55px;
+        
+    }
+    .catalogue__title{
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 15px;
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+    }
+    .title__form{
+        margin-top: 40px;
+    }
+    
 }
 
 @media (max-width: 695px){
 
+    .carousel-inner{
+        height: 220px;
+    }
+
     .catalogue{
-    
         width: 150px;
         height: 150px;
         border-radius: 20px;
         border: 5px solid #8ACBC1;
-   
-    
     }
 
     .logo{
-
         position: relative;
         width: 220px;
         height: 170px;
         margin: 0 auto;
         left: 35%;
-        
-      
     }
 
     iframe{
         width: 450px;
         height: 300px;
         margin-left: 30px;
+    }
+
+    .instagram__h2{
+        font-size: 30px;
+    }
+    
+    .instagram__h3{
+        font-size: 17px;
+    }
+
+    .instagram{
+        .fa-instagram{
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            left: 46%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .pasteleria{
+        width: 450px;
+        height: 300px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        display: block;
     }
 
 }
 
 @media (max-width: 598px){
 
-    .logo{
+    .carousel-inner{
+        height: 200px;
+    }
 
+    .logo{
         position: relative;
         width: 200px;
         height: 150px;
         margin: 0 auto;
         left: 35%;
-        
     }
 
     .header__a{
-    
         font-size: 10px;
-        
         padding: 5px;
         margin: 3px;
         margin-right: 3px;
     }
-    header nav{
 
+    header nav{
         display: flex;
         width: 100%;
         justify-content:space-around;
-        align-items:stretch;
-        
+        align-items:stretch;  
     }
+
     iframe{
         width: 300px;
         height: 150px;
         margin-left: 30px;
     }
 
+    .imgLogoFooter{
+        display: none;    
+    }
+
+    .instagram__h2{
+        font-size: 30px;
+    }
+    
+    .instagram__h3{
+        font-size: 17px;
+    }
+
+    .instagram{
+        .fa-instagram{
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            left: 46%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .pasteleria{
+        width: 350px;
+        height: 175px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+
 }
 
-@media (max-width: 376px){
+@media (max-width: 520px){
+
+    .carousel-inner{
+        height: 147px;
+    }
+
+    .row{
+        display:block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .list-unstyled{
+        margin: auto;
+    }
+
+    .instagram__h2{
+        font-size: 30px;
+    }
+    
+    .instagram__h3{
+        font-size: 17px;
+    }
+
+    .instagram{
+        .fa-instagram{
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            left: 44%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .pasteleria{
+        width: 300px;
+        height: 150px;
+        margin-top: 100px;
+        border: 5px solid #8ACBC1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        display: block;
+    }
+
+}
+
+@media (max-width: 377px){
 
     .logo{
-
         position: relative;
         width: 100px;
         height: 70px;
         margin: 0 auto;
         left: 40%;
-        
-      
     }
 
     .header__a{
-    
         font-size: 6px;
-        
-        padding: 5px;
-        margin: 0px;
+        padding: 0px;
+        margin: 5px 1px 5px 1px;
     }
 
 
     header{
-
         display: grid;
         width: 100%;
         grid-template-columns: repeat(1,1fr);
@@ -770,7 +994,6 @@ margin-top: 70px;
 
     
     header nav{
-
     display: grid;
     width: 100%;
     justify-content:baseline;
@@ -778,51 +1001,27 @@ margin-top: 70px;
     list-style: none;
     text-align:start;
     margin: 0 auto;
-    
-     
-    
     }
 
-    .pasteleria{
-        
-        width: 250px;
-        height: 150px;
-        margin-top: 100px;
-        border: 5px solid #8ACBC1;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        margin-right: 65px;
-        margin-left: 70px;
-    }  
-
-
-
-    .footer__content{
-        
+    .footer__content{        
         color: black;
         display: flex;
         flex-direction:column;
         justify-content: space-evenly;
-        
-        
     }
 
 
 
     .footer__title{
-
         font-style: 'Open Sans', sans-serif;
         font-size: 12px;
         margin-top: 15px;
         font-weight: 800;
-
-
     }
 
 
 
     .footer__link{
-
         list-style: none;
         display: flex;
         margin:  11px;
@@ -850,14 +1049,10 @@ margin-top: 70px;
     margin-top: 100px;
     margin-bottom: 200px;
     box-shadow: 7px 13px 37px #C4E5E0;
-
-
-
 }
 
 
 .title{
-    
     font-family: 'Dancing Script', cursive;
     position: relative;
     text-align: center;
@@ -869,15 +1064,12 @@ margin-top: 70px;
 }
 
 .title__from{
-
     font-family: 'Dancing Script', cursive;
     position: relative;
     text-align: center;
     font-size: 30px;
     color: #C895C3;
-    
     margin: 0 auto;
-
 }
 
 iframe{
@@ -887,40 +1079,70 @@ iframe{
 }
 
 .slider__img{
-    
     width: 150px;
     height: 150px;
     position: relative;
     top: 90px;
-    
     display: flex;
     flex-direction:column;
     right: 10px;
     padding: 10px;
-    
-
 }
 
 .title__comoComprar{
-
     font-family: 'Dancing Script', cursive;
     position: relative;
     text-align:center;
     font-size: 45px;
     color: #C895C3;
     padding: 50px;
- 
+}
 
+.imgLogoFooter{
+    display: none;
 }
 
 
+.publicity__position p{
+    font-size: 12px;
+}
+.publicity__position h3{
+    font-size: 19px;
+    margin-right: 15px;
+    
 }
 
 
+.instagram__h2{
+    font-size: 25px;
+}
 
+.instagram__h3{
+    font-size: 12px;
+}
 
+.instagram{
+    .fa-instagram{
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        left: 44%;
+        width: 40px;
+        height: 40px;
+    }
 
+}
+.pasteleria{
+    width: 300px;
+    height: 150px;
+    margin-top: 100px;
+    border: 5px solid #8ACBC1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: block;
+}
 
+}
 
 
 

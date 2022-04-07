@@ -6,23 +6,37 @@ header{
     
 }
 
-
-
 .header__a{
     color: $colorFondo;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     margin-right: 40px;
-
+    
     &:hover{
         color: #C4E5E0;
     }
 }
 
 ul{
-   
     list-style: none;
-   
-    
 }
+
+.nav__container{
+display: flex;
+height: 100%;
+width: 90%;
+margin: 0 auto;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav__menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    margin: auto;
+}
+
+
+
