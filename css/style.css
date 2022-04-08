@@ -183,6 +183,24 @@ ul {
   border: 5px solid #8ACBC1;
   margin-bottom: 60px;
 }
+.carousel-inner p {
+  color: #FFFDF7;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+.carousel-inner p:hover {
+  color: #8ACBC1;
+}
+.carousel-inner h5 {
+  font-family: "Dancing Script", cursive;
+  color: #FFFDF7;
+  font-weight: bold;
+  font-size: 62px;
+}
+.carousel-inner h5:hover {
+  color: #8ACBC1;
+}
 
 .slider {
   grid-area: slider;
@@ -637,6 +655,12 @@ p::before {
   .carousel-inner {
     height: 300px;
   }
+  .carousel-inner p {
+    font-size: 14px;
+  }
+  .carousel-inner h5 {
+    font-size: 32px;
+  }
 
   .instagram .fa-instagram {
     left: 46%;
@@ -680,6 +704,12 @@ p::before {
 @media (max-width: 792px) {
   .carousel-inner {
     height: 280px;
+  }
+  .carousel-inner p {
+    font-size: 14px;
+  }
+  .carousel-inner h5 {
+    font-size: 32px;
   }
 
   .py-4 {
